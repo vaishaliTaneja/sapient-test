@@ -1,6 +1,6 @@
 import React, { useContext, useReducer } from "react";
 import { Context } from "./context";
-import Reducer from "./reducer";
+import {Reducer} from "./reducer";
 
 export const useProduct = () => {
   const { state, dispatch } = useContext(Context);

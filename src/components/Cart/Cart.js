@@ -28,6 +28,7 @@ const Cart = () => {
                 payload: false,
             })
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     useEffect (() => {
