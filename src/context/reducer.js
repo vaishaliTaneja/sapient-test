@@ -27,7 +27,7 @@ export const Reducer = (state, action) => {
             return {
                 ...state,
                 products: state.products.filter((c) =>
-                    c.id === action.payload.id ? (c.qty = --c.qty) : c.qty
+                    c.id === action.payload.id && c.qty > 1 ? (c.qty = --c.qty) : c.qty
                 )
             };
         case "REMOVE_FROM_CART":
